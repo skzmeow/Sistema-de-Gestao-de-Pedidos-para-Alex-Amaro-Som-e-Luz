@@ -2,7 +2,7 @@
 
 O objetivo do projeto é aplicar, em contexto real, técnicas de levantamento e especificação de requisitos, modelagem de sistemas e prototipagem de soluções computacionais em parceria com a empresa Alex Amaro Som & Luz que atua no setor de som e iluminação para eventos há 40 anos no mercado.
 
-## Tecnologias e Ferramentas
+## Tecnologias e Ferramentas utilizadas
 [GitHub](https://github.com/)  
 [Figma](https://www.figma.com/)  
 [Draw.IO](https://app.diagrams.net/)  
