@@ -6,9 +6,9 @@ O objetivo do projeto é aplicar, em contexto real, técnicas de levantamento e 
 [GitHub](https://github.com/)  
 [Figma](https://www.figma.com/)  
 [Draw.IO](https://app.diagrams.net/)  
-[Lucidchart](https://www.lucidchart.com/)
-[XAMPP](https://www.apachefriends.org/pt_br/index.html)
-[BrModelo](https://www.zigg.com.br/downloads/brmodelo/)
+[Lucidchart](https://www.lucidchart.com/)  
+[XAMPP](https://www.apachefriends.org/pt_br/index.html)  
+[BrModelo](https://www.zigg.com.br/downloads/brmodelo/)  
 
 
 ## Organização do Projeto
