@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Login e Cadastro | Alex Amaro Som &amp; Luz
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body class="login-page">
+  <header class="site-header">
+   <a class="brand" href="index.html">
+    <img alt="Alex Amaro Som &amp; Luz" data-img="logo"/>
+   </a>
+   <nav class="nav">
+    <a href="index.html">
+     Home
+    </a>
+    <a href="index.html#servicos">
+     Serviços
+    </a>
+    <a href="index.html#pacotes">
+     Pacotes
+    </a>
+    <a href="index.html#sobre">
+     Sobre nós
+    </a>
+    <a href="index.html#portfolio">
+     Portfólio
+    </a>
+    <a href="index.html#faq">
+     FAQ
+    </a>
+    <a href="index.html#contato">
+     Contato
+    </a>
+   </nav>
+   <div class="account" id="account">
+    <a class="register" href="login.html">
+     CADASTRE-SE
+    </a>
+   </div>
+   <button aria-label="Abrir menu" class="mobile-menu">
+    ☰
+   </button>
+  </header>
+  <main class="login-main">
+   <section class="login-column">
+    <h3>
+     Seu próximo evento começa aqui!
+     <br/>
+     Faça o login na sua conta:
+    </h3>
+    <form id="loginForm">
+     <input name="user" placeholder="Email ou nome de usuário" required=""/>
+     <input name="password" placeholder="Senha" required="" type="password"/>
+     <button class="text-btn" id="forgot" type="button">
+      Esqueceu a senha?
+      <br/>
+      Clique aqui.
+     </button>
+     <button class="red-btn" type="submit">
+      Entrar
+     </button>
+    </form>
+    <div class="or">
+     ou
+    </div>
+    <button class="google" id="google">
+     🌐　Entre com sua conta do Google
+    </button>
+   </section>
+   <section class="register-column">
+    <h3>
+     Não tem uma conta? Cadastre-se aqui:
+    </h3>
+    <form id="registerForm">
+     <input name="name" placeholder="Nome Completo" required=""/>
+     <input name="contact" placeholder="Telefone ou E-mail" required=""/>
+     <input minlength="6" name="password" placeholder="Senha" required="" type="password"/>
+     <input minlength="6" name="confirm" placeholder="Confirme sua senha" required="" type="password"/>
+     <h4>
+      Data de Nascimento:
+     </h4>
+     <div class="birth">
+      <select aria-label="Dia" name="day">
+      </select>
+      <select aria-label="Mês" name="month">
+      </select>
+      <select aria-label="Ano" name="year">
+      </select>
+     </div>
+     <p class="terms">
+      Ao clicar em "Criar conta", você concorda com nossos Termos, Política de Privacidade e Política de Cookies. Você poderá receber notificações por e-mail e pode cancelar a assinatura a qualquer momento.
+     </p>
+     <button class="red-btn" type="submit">
+      Criar conta
+     </button>
+    </form>
+   </section>
+  </main>
+  <footer id="contato">
+   <div>
+    <h3>
+     ALEX AMARO | SOM &amp; LUZ
+    </h3>
+    <p>
+     Especialistas em iluminação e sonorização para eventos
+    </p>
+    <p class="social">
+     <a href="https://www.instagram.com/" rel="noopener" target="_blank">
+      ◎ Instagram
+     </a>
+     <a href="https://wa.me/5519123456789" rel="noopener" target="_blank">
+      ◉ WhatsApp
+     </a>
+    </p>
+   </div>
+   <div>
+    <b>
+     Suporte
+    </b>
+    <a href="index.html#contato">
+     Contato
+    </a>
+    <a href="index.html#faq">
+     FAQ
+    </a>
+    <a href="index.html#politica">
+     Política de Cancelamento
+    </a>
+   </div>
+   <div>
+    <b>
+     Navegação
+    </b>
+    <a href="index.html">
+     Home
+    </a>
+    <a href="index.html#servicos">
+     Serviços
+    </a>
+    <a href="index.html#sobre">
+     Sobre nós
+    </a>
+    <a href="index.html#portfolio">
+     Portfólio
+    </a>
+   </div>
+   <div>
+    <b>
+     Contato
+    </b>
+    <a href="tel:+5519123456789">
+     +55 19 123456789
+    </a>
+    <a href="mailto:contato@alexamaro.com.br">
+     contato@alexamaro.com.br
+    </a>
+   </div>
+  </footer>
+  <script src="js/assets.js">
+  </script>
+  <script src="js/script.js">
+  </script>
+ </body>
+</html>
+

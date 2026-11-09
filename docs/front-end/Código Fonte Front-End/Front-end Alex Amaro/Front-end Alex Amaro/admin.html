@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Gestão de Eventos | Alex Amaro
+  </title>
+  <link href="css/admin.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <aside class="sidebar">
+   <a class="logo" href="admin.html">
+    <img alt="Alex Amaro Som &amp; Luz" src="img/logo.png"/>
+   </a>
+   <p class="side-caption">
+    GESTÃO DE EVENTOS
+   </p>
+   <nav aria-label="Administração">
+    <button class="nav-item active" data-view="dashboard">
+     ▦ Visão geral
+    </button>
+    <button class="nav-item" data-view="agenda">
+     ▦ Agenda de eventos
+    </button>
+    <button class="nav-item" data-view="pedidos">
+     ▤ Orçamentos
+    </button>
+    <button class="nav-item" data-view="equipamentos">
+     ▣ Equipamentos
+    </button>
+    <button class="nav-item" data-view="clientes">
+     ♙ Clientes
+    </button>
+    <button class="nav-item" data-view="financeiro">
+     ◉ Financeiro
+    </button>
+   </nav>
+   <div class="side-bottom">
+    <a href="index.html">
+     ↗ Visualizar site
+    </a>
+    <button id="logout">
+     Sair da conta
+    </button>
+   </div>
+  </aside>
+  <div class="workspace">
+   <header class="topbar">
+    <button aria-label="Abrir menu" id="menuToggle">
+     ☰
+    </button>
+    <div>
+     <span class="eyebrow">
+      PAINEL ADMINISTRATIVO
+     </span>
+     <h1 id="pageTitle">
+      Visão geral
+     </h1>
+    </div>
+    <div class="top-actions">
+     <span class="demo">
+      Dados demonstrativos
+     </span>
+     <button aria-expanded="false" class="profile" id="profileButton">
+      AA
+      <span>
+       Alex Amaro ▾
+      </span>
+     </button>
+     <div class="profile-menu" hidden="" id="profileMenu">
+      <span>
+       Administrador
+      </span>
+      <button id="profileExit">
+       Encerrar sessão
+      </button>
+     </div>
+    </div>
+   </header>
+   <main id="content">
+   </main>
+  </div>
+  <dialog id="eventDialog">
+   <form id="eventForm">
+    <div class="dialog-heading">
+     <h2 id="dialogTitle">
+      Novo evento
+     </h2>
+     <button aria-label="Fechar" id="closeDialog" type="button">
+      ×
+     </button>
+    </div>
+    <input name="id" type="hidden"/>
+    <label>
+     Nome do evento
+     <input maxlength="90" name="title" placeholder="Ex.: Show no Espaço Central" required=""/>
+    </label>
+    <div class="form-grid">
+     <label>
+      Data
+      <input name="date" required="" type="date"/>
+     </label>
+     <label>
+      Horário
+      <input name="time" required="" type="time"/>
+     </label>
+    </div>
+    <label>
+     Cliente
+     <input name="client" placeholder="Nome do contratante" required=""/>
+    </label>
+    <label>
+     Local
+     <input name="location" placeholder="Local do evento" required=""/>
+    </label>
+    <div class="form-grid">
+     <label>
+      Serviço
+      <select name="service">
+       <option>
+        Iluminação
+       </option>
+       <option>
+        Sonorização
+       </option>
+       <option>
+        Estrutura
+       </option>
+       <option>
+        Efeitos especiais
+       </option>
+       <option>
+        Pacote completo
+       </option>
+      </select>
+     </label>
+     <label>
+      Status
+      <select name="status">
+       <option>
+        Confirmado
+       </option>
+       <option>
+        Pendente
+       </option>
+       <option>
+        Concluído
+       </option>
+       <option>
+        Cancelado
+       </option>
+      </select>
+     </label>
+    </div>
+    <label>
+     Valor previsto (R$)
+     <input min="0" name="value" step="0.01" type="number" value="0"/>
+    </label>
+    <fieldset class="equipment-fieldset">
+     <legend>
+      Equipamentos para este evento
+     </legend>
+     <p class="muted">
+      Informe as quantidades. Reservas são bloqueadas quando excedem o estoque na mesma data.
+     </p>
+     <div id="equipmentInputs">
+     </div>
+     <p class="form-error" id="equipmentError" role="alert">
+     </p>
+    </fieldset>
+    <label>
+     Observações
+     <textarea name="notes" placeholder="Montagem, equipe, necessidades..." rows="2"></textarea>
+    </label>
+    <div class="dialog-actions">
+     <button class="outline" id="cancelDialog" type="button">
+      Cancelar
+     </button>
+     <button class="primary" type="submit">
+      Salvar evento
+     </button>
+    </div>
+   </form>
+  </dialog>
+  <div aria-live="polite" class="toast" id="toast" role="status">
+  </div>
+  <script defer="" src="js/admin.js">
+  </script>
+ </body>
+</html>
+

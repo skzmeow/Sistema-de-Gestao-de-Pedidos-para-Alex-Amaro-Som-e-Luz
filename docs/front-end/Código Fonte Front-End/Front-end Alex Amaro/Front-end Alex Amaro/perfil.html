@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu perfil | Alex Amaro Som &amp; Luz</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/perfil.css">
+  <script src="js/assets.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/perfil.js" defer></script>
+</head>
+<body class="internal profile-page">
+  <header class="site-header">
+    <a class="brand" href="index.html"><img data-img="logo" alt="Alex Amaro Som &amp; Luz"></a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="index.html">Home</a><a href="index.html#servicos">Serviços</a><a href="index.html#pacotes">Pacotes</a>
+      <a href="index.html#sobre">Sobre nós</a><a href="index.html#portfolio">Portfólio</a><a href="index.html#faq">FAQ</a><a href="index.html#contato">Contato</a>
+    </nav>
+    <div class="account" id="account"></div>
+    <button class="mobile-menu" aria-label="Abrir menu">☰</button>
+  </header>
+  <main class="profile-main">
+    <p class="breadcrumb"><a href="index.html">HOME</a> › MEU PERFIL</p>
+    <h1>Meu perfil</h1>
+    <p class="profile-subtitle">Seus dados para facilitar a organização e o orçamento do seu evento.</p>
+    <div class="profile-grid">
+      <aside class="profile-summary">
+        <div class="profile-picture" id="profilePicture" role="img" aria-label="Foto do perfil">M</div>
+        <h2 id="profileName">Marina Sena</h2>
+        <p>Cliente</p>
+        <label class="photo-action" for="profilePhoto">Alterar foto</label>
+        <input type="file" id="profilePhoto" accept="image/png,image/jpeg,image/webp" hidden>
+        <p class="photo-help">JPG, PNG ou WebP, até 2 MB.</p>
+        <a class="profile-cart-link" href="carrinho.html">Ver meu carrinho de orçamento →</a>
+      </aside>
+      <section class="profile-details" aria-labelledby="detailsHeading">
+        <h2 id="detailsHeading">Informações pessoais</h2>
+        <form id="profileForm">
+          <div class="profile-fields">
+            <label>Nome completo<input id="clientName" name="name" required maxlength="100" autocomplete="name"></label>
+            <label>E-mail<input id="clientEmail" name="email" type="email" autocomplete="email"></label>
+            <label>Telefone / WhatsApp<input id="clientPhone" name="phone" type="tel" autocomplete="tel" placeholder="(19) 99999-9999"></label>
+            <label>Empresa ou responsável pelo evento (opcional)<input id="clientCompany" name="company" maxlength="100"></label>
+          </div>
+          <h2>Informações do evento</h2>
+          <div class="profile-fields">
+            <label>Tipo de evento<select name="eventType" id="eventType"><option value="">Selecione</option><option>Casamento</option><option>Formatura</option><option>Aniversário</option><option>Show</option><option>Evento corporativo</option><option>Outro</option></select></label>
+            <label>Data prevista<input name="eventDate" id="eventDate" type="date"></label>
+            <label>Local do evento<input name="venue" id="venue" placeholder="Espaço, cidade ou endereço"></label>
+            <label>Quantidade estimada de convidados<input name="guests" id="guests" type="number" min="1" step="1" placeholder="Ex.: 150"></label>
+          </div>
+          <label class="profile-notes">Observações sobre o evento<textarea name="notes" id="notes" rows="4" placeholder="Informações importantes para o orçamento"></textarea></label>
+          <div class="profile-actions"><span id="profileFeedback" role="status" aria-live="polite"></span><button class="save-profile" type="submit">Salvar alterações</button></div>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer id="contato"><div><h3>ALEX AMARO | SOM &amp; LUZ</h3><p>Especialistas em iluminação e sonorização para eventos</p></div><div><b>Suporte</b><a href="index.html#contato">Contato</a><a href="index.html#faq">FAQ</a></div><div><b>Navegação</b><a href="index.html">Home</a><a href="index.html#servicos">Serviços</a></div><div><b>Contato</b><a href="tel:+5519123456789">+55 19 123456789</a><a href="mailto:contato@alexamaro.com.br">contato@alexamaro.com.br</a></div></footer>
+</body>
+</html>
