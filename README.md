@@ -20,4 +20,4 @@ O objetivo do projeto é aplicar, em contexto real, técnicas de levantamento e 
 
 ## Autores do Projeto
 
-| [Stella Caum](https://github.com/skzmeow) | [Isabely Coelho](https://github.com/) |[Geiza Morais](https://github.com/) |[Ana Lívia Lins](https://github.com/) |[Pietra Tribiolli](https://github.com/) |
+| [Stella Caum](https://github.com/skzmeow) | [ Isabely Coelho](https://github.com/) |[ Geiza Morais](https://github.com/) |[ Ana Lívia Lins](https://github.com/) |[ Pietra Tribiolli](https://github.com/) |
