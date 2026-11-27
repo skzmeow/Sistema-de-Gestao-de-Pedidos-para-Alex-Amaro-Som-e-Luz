@@ -1,0 +1,5 @@
+# Static HTML/CSS/JS site with no build step.
+# The site's pages live in the nested front-end source folder.
+[build]
+  command = ""
+  publish = "docs/front-end/Código Fonte Front-End/Front-end Alex Amaro/Front-end Alex Amaro"
